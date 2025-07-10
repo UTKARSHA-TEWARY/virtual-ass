@@ -18,7 +18,7 @@ app.use(express.json());
 // ✅ CORS config (allow frontend to access API with credentials)
 app.use(
   cors({
-    origin: "http://localhost:5173", // your frontend
+    origin: "https://virtual-assistant-frontt.onrender.com", // your frontend
     credentials: true,              // allow cookies, tokens
   })
 );
