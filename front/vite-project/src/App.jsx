@@ -4,6 +4,9 @@ import Signup from './pages/signup.jsx';
 import Signin from './pages/signin.jsx';
 import Customize from './pages/customize.jsx';
 import Customize2 from './pages/customize2.jsx';
+// src/main.jsx or src/App.jsx
+import './index.css'; // or wherever your CSS is
+
 import Home from './pages/home.jsx';
 import { UserDataContext } from './context/userContext.jsx';
 
