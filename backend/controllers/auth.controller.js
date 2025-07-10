@@ -18,8 +18,8 @@ export const signup = async (req, res) => {
 
     res.cookie("tocken", tocken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
+      secure: true,
+      sameSite: "none",
     });
 
     await user.save();
@@ -43,8 +43,8 @@ export const Login = async (req, res) => {
 
     res.cookie("tocken", tocken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
+  secure: true,
+      sameSite: "none",
     });
 
     res.status(200).json(user);
