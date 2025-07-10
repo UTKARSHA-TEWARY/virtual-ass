@@ -8,7 +8,7 @@ import axios from 'axios';
 export const UserDataContext = createContext();
 
 export default function UserContextProvider({ children }) {
-  const serverUrl = "http://localhost:8000";
+  const serverUrl = "https://virtual-ass-backend.onrender.com";
   const [userData, setUserData] = useState({});
   const [frontendImage, setFrontendImage] = useState('');
   const [backendImage, setBackendImage] = useState('');
